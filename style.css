@@ -1,15 +1,21 @@
 body{
     background-color: seagreen;
+    margin: auto;
+    width: 50%;
+    padding: 50px;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
 }
 
 #display{
-    height: 200px;
+    height: 150px;
     width: 600px;
     background-color: black;
 }
 
 #controls{
-    height: 500px;
+    height: 515px;
     width: 600px;
     background-color: grey;
 }
@@ -18,13 +24,22 @@ button{
     font-size: 20pt;
     text-align: center;
     height: 100px;
+    padding: 50px;
     width: 140px;
 }
 
 #C{
-    width: 300px
+    width: 285px
+}
+
+#divide{
+    width: 160px;
 }
 
 #equal{
-    width: 400px
+    width: 450px
+}
+
+#mul, #sub, #add{
+    width: 160px
 }
