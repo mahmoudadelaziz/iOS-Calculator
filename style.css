@@ -1,0 +1,30 @@
+body{
+    background-color: seagreen;
+}
+
+#display{
+    height: 200px;
+    width: 600px;
+    background-color: black;
+}
+
+#controls{
+    height: 500px;
+    width: 600px;
+    background-color: grey;
+}
+
+button{
+    font-size: 20pt;
+    text-align: center;
+    height: 100px;
+    width: 140px;
+}
+
+#C{
+    width: 300px
+}
+
+#equal{
+    width: 400px
+}
