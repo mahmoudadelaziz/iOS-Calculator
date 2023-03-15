@@ -9,23 +9,30 @@ body{
 }
 
 #display{
+    font-size: 50pt;
+    text-align: right;
     height: 150px;
     width: 600px;
     background-color: black;
+    color: aliceblue;
 }
 
 #controls{
     height: 515px;
     width: 600px;
     background-color: grey;
+    text-align: center;
+    vertical-align: middle;
 }
 
 button{
-    font-size: 20pt;
+    font-size: 25pt;
     text-align: center;
+    vertical-align: middle;
     height: 100px;
     padding: 50px;
     width: 140px;
+    display: inline-block
 }
 
 #C{
