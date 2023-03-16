@@ -43,3 +43,28 @@ document.getElementById("C").addEventListener("click", ()=>{cleardisplay(); toCa
 // Backspace functionality
 function Backspace(){myDisplay.value = myDisplay.value.substr(0, myDisplay.value.length-1) }
 document.getElementById("arrow").addEventListener("click", Backspace)
+
+// Do the calculation
+const equalButton = document.getElementById("equal")
+
+function computeResult(arr){
+    let toCalculate = arr.join('')
+    let result = 0
+    if(!['+','-','*','/'].includes(arr[arr.lenght-1]))
+    {
+        result = (toCalculate)
+    }
+    else
+    {
+        toCalculate.substr(0,toCalculate.length-1)
+        result = (toCalculate)
+    }
+    return result
+}
+
+equalButton.addEventListener("click", ()=>
+{
+    toCalc.push(myDisplay.value);
+    cleardisplay();
+    myDisplay.value = eval(computeResult(toCalc));
+})
