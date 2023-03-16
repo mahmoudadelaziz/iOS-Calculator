@@ -1,3 +1,6 @@
+// Create a computation array (elements of the LHS expression)
+let toCalc = []
+
 // grab the calculator screen
 const myDisplay = document.getElementById("display")
 
@@ -24,13 +27,18 @@ for(let i = 0; i < OpButtons.length; i++)
 {
     // Log the number clicked (for debugging)
     OpButtons[i].addEventListener("click", (event)=>{console.log(event.target.innerText)})
+    
     // Add the required behavior (1. clear screen, 2. expect new input, 3. add operand and operator to array)
+    // Add operand and operator to Computation Array
+    OpButtons[i].addEventListener("click", (event)=>{toCalc.push(myDisplay.value); toCalc.push(event.target.innerText)})
+
+    // Clear Screen
     OpButtons[i].addEventListener("click", cleardisplay)
 
 }
 
 // Enable the functionality of the C "Clear" Button
-document.getElementById("C").addEventListener("click", cleardisplay)
+document.getElementById("C").addEventListener("click", ()=>{cleardisplay(); toCalc=[]})
 
 // Backspace functionality
 function Backspace(){myDisplay.value = myDisplay.value.substr(0, myDisplay.value.length-1) }
