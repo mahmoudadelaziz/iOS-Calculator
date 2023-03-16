@@ -16,3 +16,7 @@ for(let i = 0; i < NumButtons.length; i++)
 // Enable the functionality of the C "Clear" Button
 function cleardisplay() {myDisplay.value = ""}
 document.getElementById("C").addEventListener("click", cleardisplay)
+
+// Backspace functionality
+function Backspace(){myDisplay.value = myDisplay.value.substr(0, myDisplay.value.length-1) }
+document.getElementById("arrow").addEventListener("click", Backspace)
