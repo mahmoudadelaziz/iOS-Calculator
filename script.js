@@ -66,5 +66,9 @@ equalButton.addEventListener("click", ()=>
 {
     toCalc.push(myDisplay.value);
     cleardisplay();
-    myDisplay.value = eval(computeResult(toCalc));
+    let currentResult = eval(computeResult(toCalc));
+    myDisplay.value = currentResult
+
+    // reset everything (AN ISSUE HERE)
+    toCalc = []
 })
