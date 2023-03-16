@@ -26,6 +26,7 @@ body{
 
 button{
     font-size: 25pt;
+    background-color: #d8d9db;
     text-align: center;
     vertical-align: middle;
     height: 100px;
@@ -34,18 +35,15 @@ button{
     display: inline-block
 }
 
+.Ops{
+    width: 160px;
+    background-color: #df974c;
+}
+
 #C{
     width: 285px
 }
 
-#divide{
-    width: 160px;
-}
-
 #equal{
     width: 450px
-}
-
-#mul, #sub, #add{
-    width: 160px
 }
